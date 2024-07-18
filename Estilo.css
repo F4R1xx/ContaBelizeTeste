@@ -1,0 +1,218 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E3D6FB !important;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.Logo {
+    width: 100%;
+    max-width: 300px;
+}
+
+h1 {
+    text-align: center;
+    color: #B93171;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.form input,
+.form .btn {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.form input {
+    flex: 1 1 200px;
+    max-width: calc(50% - 10px);
+    transition: border-color 0.3s ease-in-out;
+}
+
+.form input:focus {
+    border-color: #4CAF50;
+}
+
+.form .btn {
+    flex: 1 1 100%;
+    max-width: 200px;
+    background-color: #B93171;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form .btn:hover {
+    background-color: #8f2757;
+}
+
+#loginMessage {
+    text-align: center;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 50px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.table th,
+.table td {
+    padding: 10px;
+    border: 1px solid #db5d98;
+    text-align: center;
+}
+
+.table th {
+    background-color: #B93171;
+    color: white;
+}
+
+.vencido {
+    background-color: rgba(255, 0, 0, 0.8);
+    color: white;
+}
+
+.hoje {
+    background-color: rgba(255, 255, 0, 0.8);
+    color: black;
+}
+
+.futuro {
+    background-color: rgba(0, 128, 0, 0.8);
+    color: white;
+}
+
+.finalizado {
+    background-color: white !important;
+    color: black !important;
+}
+
+.table button {
+    background-color: #B93171;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.table button:hover {
+    background-color: #8f2757;
+}
+
+.login-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #B93171;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #8f2757;
+}
+
+@media (max-width: 500px) {
+    .form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .form input {
+        max-width: 100%;
+        flex: 0;
+    }
+
+    .form .btn {
+        max-width: 100%;
+    }
+
+    .table {
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0) !important;
+    }
+
+    .table thead {
+        display: none;
+    }
+
+    .table tr {
+        margin-bottom: 10px;
+        border-bottom: 2px solid #ddd;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        border: 4px solid #00000085;
+    }
+
+    .table td {
+        margin-bottom: 5px;
+        text-align: center;
+        padding-left: 0;
+        position: relative;
+        border: 1px solid #0000004b;
+        border-radius: 5px;
+        padding: 5px 0;
+    }
+
+    .table td::before {
+        content: attr(data-label);
+        position: relative;
+        left: 0;
+        width: 100%;
+        padding-right: 10px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .table td:last-child {
+        margin-top: 10px;
+    }
+
+    .table button {
+        width: 50%;
+        padding: 10px;
+        margin: 10px;
+        margin-bottom: 5px;
+    }
+
+    .Logo {
+        content: url('Logo_Vertical.png');
+        width: 300px;
+    }
+}

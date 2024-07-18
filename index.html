@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContaBelize</title>
+    <script src="Codigo.js" type="module" defer></script>
+    <link rel="stylesheet" href="Estilo.css">
+    <link rel="icon" href="Logo_icon.png" type="image/png">
+    <!--Imports para mensagens bonitas e PDF relatório-->
+    <!--NAO MEXER-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <!--NAO MEXER-->
+    <!--Imports para mensagens bonitas e PDF relatório-->
+</head>
+
+<body>
+    <div class="container">
+        <img class="Logo" src="Logo_Horizontal.png" alt="Logo da empresa">
+
+        <div id="loginMessage" style="display: none;">
+            <h1>Bem vindo ao ContaBelize</h1>
+            <a href="login.html" class="login-button">Fazer login</a>
+        </div>
+        <div id="formContainer" style="display: none;">
+            <h1>Inserir Pedido</h1>
+            <form id="pedidoForm" class="form">
+                <input type="date" class="enterData" placeholder="Data" lang="pt-BR">
+                <input type="number" class="enterPreco" placeholder="Preço">
+                <input type="text" class="enterCliente" placeholder="Nome do Cliente">
+                <input type="text" class="enterNomePeca" placeholder="Nome da Peça">
+                <input type="number" class="enterParcelasTotais" placeholder="Total de Parcelas">
+                <button type="button" id="envPedido" class="btn">Enviar Pedido</button>
+            </form>
+
+            <h1>Lista de Pedidos</h1>
+            <table id="pedidosTable" class="table">
+                <thead>
+                    <tr>
+                        <th>Data do Pedido</th>
+                        <th>Data do Pagamento</th>
+                        <th>Preço</th>
+                        <th>Preço Parcela</th>
+                        <th>Cliente</th>
+                        <th>Nome da Peça</th>
+                        <th>Entrega</th>
+                        <th>Parcelas Pagas</th>
+                        <th>Total de Parcelas</th>
+                        <th>Botão Parcela</th>
+                        <th>Botão Entrega</th>
+                        <th>Finalizar Pedido</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Pedidos serão inseridos aqui -->
+                </tbody>
+            </table>
+        </div>
+        <button id="gerarRelatorio" class="btn login-button">Gerar Relatório</button>
+    </div>
+</body>
+
+</html>

@@ -1,1 +1,83 @@
-const _0x3af2d6=_0x23fd;(function(_0x4aa1ca,_0x30fb82){const _0x235721=_0x23fd,_0x573020=_0x4aa1ca();while(!![]){try{const _0xa222a4=parseInt(_0x235721(0x1bb))/0x1+-parseInt(_0x235721(0x1af))/0x2*(parseInt(_0x235721(0x19d))/0x3)+parseInt(_0x235721(0x1b8))/0x4+-parseInt(_0x235721(0x1a0))/0x5+parseInt(_0x235721(0x19f))/0x6*(-parseInt(_0x235721(0x1aa))/0x7)+-parseInt(_0x235721(0x1cd))/0x8+parseInt(_0x235721(0x1a2))/0x9*(parseInt(_0x235721(0x1c4))/0xa);if(_0xa222a4===_0x30fb82)break;else _0x573020['push'](_0x573020['shift']());}catch(_0x16594c){_0x573020['push'](_0x573020['shift']());}}}(_0x309d,0x9050a));const _0x2e075d=(function(){let _0x235dc3=!![];return function(_0x145838,_0x55c871){const _0x57f31f=_0x235dc3?function(){const _0x1a7b1c=_0x23fd;if(_0x55c871){const _0x239997=_0x55c871[_0x1a7b1c(0x1a9)](_0x145838,arguments);return _0x55c871=null,_0x239997;}}:function(){};return _0x235dc3=![],_0x57f31f;};}()),_0xd9484=_0x2e075d(this,function(){const _0x113725=_0x23fd;return _0xd9484['toString']()[_0x113725(0x1bd)](_0x113725(0x1b2))[_0x113725(0x1b4)]()[_0x113725(0x1c0)](_0xd9484)[_0x113725(0x1bd)]('(((.+)+)+)+$');});_0xd9484();const _0x387df8=(function(){let _0x2d1bb2=!![];return function(_0x1a8063,_0x5924ab){const _0x1b8186=_0x2d1bb2?function(){const _0x342db3=_0x23fd;if(_0x5924ab){const _0x28ac82=_0x5924ab[_0x342db3(0x1a9)](_0x1a8063,arguments);return _0x5924ab=null,_0x28ac82;}}:function(){};return _0x2d1bb2=![],_0x1b8186;};}()),_0xa6cba0=_0x387df8(this,function(){const _0x5aa252=_0x23fd,_0x1b83f6=function(){const _0x29455d=_0x23fd;let _0x1568c3;try{_0x1568c3=Function(_0x29455d(0x1c2)+_0x29455d(0x1ba)+');')();}catch(_0x3a3f03){_0x1568c3=window;}return _0x1568c3;},_0x22c873=_0x1b83f6(),_0x32e5a2=_0x22c873['console']=_0x22c873['console']||{},_0x5503df=[_0x5aa252(0x1ae),_0x5aa252(0x1a7),'info','error','exception',_0x5aa252(0x1ac),_0x5aa252(0x1b5)];for(let _0x3094ae=0x0;_0x3094ae<_0x5503df[_0x5aa252(0x1d0)];_0x3094ae++){const _0x3446ae=_0x387df8[_0x5aa252(0x1c0)][_0x5aa252(0x1a8)][_0x5aa252(0x1c7)](_0x387df8),_0x13739d=_0x5503df[_0x3094ae],_0x1db7ae=_0x32e5a2[_0x13739d]||_0x3446ae;_0x3446ae['__proto__']=_0x387df8[_0x5aa252(0x1c7)](_0x387df8),_0x3446ae['toString']=_0x1db7ae[_0x5aa252(0x1b4)][_0x5aa252(0x1c7)](_0x1db7ae),_0x32e5a2[_0x13739d]=_0x3446ae;}});_0xa6cba0();import{initializeApp}from'https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js';import{getAuth,signInWithEmailAndPassword,createUserWithEmailAndPassword,onAuthStateChanged}from'https://www.gstatic.com/firebasejs/10.11.0/firebase-auth.js';const firebaseConfig={'apiKey':_0x3af2d6(0x1c8),'authDomain':_0x3af2d6(0x1cc),'projectId':_0x3af2d6(0x1cb),'storageBucket':_0x3af2d6(0x1ce),'messagingSenderId':_0x3af2d6(0x1c6),'appId':_0x3af2d6(0x1b1)},app=initializeApp(firebaseConfig),auth=getAuth(app);document[_0x3af2d6(0x1be)](_0x3af2d6(0x1c5))['addEventListener'](_0x3af2d6(0x1a1),()=>{const _0xf0e2a2=_0x3af2d6,_0x440bd5=document[_0xf0e2a2(0x1be)]('email')[_0xf0e2a2(0x1ca)],_0x3f0acb=document[_0xf0e2a2(0x1be)](_0xf0e2a2(0x1cf))['value'];signInWithEmailAndPassword(auth,_0x440bd5,_0x3f0acb)[_0xf0e2a2(0x1a6)](_0x363524=>{const _0x44ae4f=_0xf0e2a2,_0x55aabc=_0x363524[_0x44ae4f(0x1b7)];saveCredentials(_0x440bd5,_0x3f0acb),window[_0x44ae4f(0x1b9)]['href']=_0x44ae4f(0x19c);})['catch'](_0x537e06=>{const _0xe02da0=_0xf0e2a2,_0x2043c9=_0x537e06['code'],_0x4fe0a1=_0x537e06['message'];Swal[_0xe02da0(0x1bf)]({'icon':_0xe02da0(0x1c9),'title':_0xe02da0(0x1b3),'text':_0xe02da0(0x1ab)+_0x4fe0a1,'confirmButtonColor':_0xe02da0(0x1a5)});});});function _0x309d(){const _0x4ef549=['table','catch','log','114MKmiMz','getItem','1:1094750666616:web:2497b29ffa37b54afb128d','(((.+)+)+)+$','Erro','toString','trace','getTime','user','3395632RfqEMZ','location','{}.constructor(\x22return\x20this\x22)(\x20)','1028255iGHyFY','href','search','getElementById','fire','constructor','./index.html','return\x20(function()\x20','removeItem','2791390kQQrzb','loginButton','1094750666616','bind','AIzaSyCX_k3nY6beoI9YlnP1Eqx4Dgh140s_ZZk','error','value','contabelize','contabelize.firebaseapp.com','9223936PRExcn','contabelize.appspot.com','password','length','index.html','18789cPKvBs','parse','5695848oOgHvo','3903655xzbBHG','click','63rOUgLs','userCredentials','timestamp','#B93171','then','warn','prototype','apply','7kDyFMg','Erro\x20no\x20login:\x20'];_0x309d=function(){return _0x4ef549;};return _0x309d();}function saveCredentials(_0x138dda,_0x243600){const _0x25c983=_0x3af2d6,_0x30a131={'email':_0x138dda,'password':_0x243600,'timestamp':new Date()[_0x25c983(0x1b6)]()};localStorage['setItem'](_0x25c983(0x1a3),JSON['stringify'](_0x30a131));}function loadCredentials(){const _0x3af0fd=_0x3af2d6,_0x47b82=localStorage[_0x3af0fd(0x1b0)](_0x3af0fd(0x1a3));if(_0x47b82){const _0x50006d=JSON[_0x3af0fd(0x19e)](_0x47b82),_0x25ed36=new Date()[_0x3af0fd(0x1b6)]();_0x25ed36-_0x50006d[_0x3af0fd(0x1a4)]<0xa*0x18*0x3c*0x3c*0x3e8?signInWithEmailAndPassword(auth,_0x50006d['email'],_0x50006d[_0x3af0fd(0x1cf)])[_0x3af0fd(0x1a6)](_0x3fe722=>{const _0x43c0cb=_0x3af0fd;window[_0x43c0cb(0x1b9)][_0x43c0cb(0x1bc)]=_0x43c0cb(0x1c1);})[_0x3af0fd(0x1ad)](_0x941046=>{}):localStorage[_0x3af0fd(0x1c3)](_0x3af0fd(0x1a3));}}function _0x23fd(_0x27d760,_0x29bfff){const _0xed84b3=_0x309d();return _0x23fd=function(_0xa6cba0,_0x387df8){_0xa6cba0=_0xa6cba0-0x19c;let _0x59e862=_0xed84b3[_0xa6cba0];return _0x59e862;},_0x23fd(_0x27d760,_0x29bfff);}onAuthStateChanged(auth,_0x50d543=>{const _0x294e00=_0x3af2d6;_0x50d543?window[_0x294e00(0x1b9)][_0x294e00(0x1bc)]=_0x294e00(0x19c):loadCredentials();});
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-auth.js";
+
+// Configuração do Firebase
+const firebaseConfig = {
+    apiKey: "AIzaSyCX_k3nY6beoI9YlnP1Eqx4Dgh140s_ZZk",
+    authDomain: "contabelize.firebaseapp.com",
+    projectId: "contabelize",
+    storageBucket: "contabelize.appspot.com",
+    messagingSenderId: "1094750666616",
+    appId: "1:1094750666616:web:2497b29ffa37b54afb128d"
+};
+
+// Inicializa o Firebase
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+
+document.getElementById('loginButton').addEventListener('click', () => {
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+
+    signInWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+            // Login bem-sucedido
+            const user = userCredential.user;
+            // Salva as credenciais no localStorage
+            saveCredentials(email, password);
+            // Redirecionar para a página principal
+            window.location.href = "index.html";
+        })
+        .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            Swal.fire({
+                icon: 'error',
+                title: 'Erro',
+                text: 'Erro no login: ' + errorMessage,
+                confirmButtonColor: '#B93171'
+            });
+        });
+});
+
+// Função para salvar as credenciais no localStorage
+function saveCredentials(email, password) {
+    const credentials = {
+        email: email,
+        password: password,
+        timestamp: new Date().getTime()
+    };
+    localStorage.setItem('userCredentials', JSON.stringify(credentials));
+}
+
+// Função para carregar as credenciais do localStorage
+function loadCredentials() {
+    const credentials = localStorage.getItem('userCredentials');
+    if (credentials) {
+        const parsedCredentials = JSON.parse(credentials);
+        const now = new Date().getTime();
+        // Verifica se as credenciais são válidas por 10 dias (10 dias em milissegundos)
+        if (now - parsedCredentials.timestamp < 10 * 24 * 60 * 60 * 1000) {
+            signInWithEmailAndPassword(auth, parsedCredentials.email, parsedCredentials.password)
+                .then((userCredential) => {
+                    // Login automático bem-sucedido
+                    window.location.href = "./index.html";
+                })
+                .catch((error) => {
+                });
+        } else {
+            localStorage.removeItem('userCredentials'); // Remove as credenciais expiradas
+        }
+    }
+}
+
+// Verifica o estado de autenticação ao carregar a página
+onAuthStateChanged(auth, (user) => {
+    if (user) {
+        // Usuário está logado
+        window.location.href = "index.html";
+    } else {
+        // Tenta carregar credenciais do localStorage
+        loadCredentials();
+    }
+});
